@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import relay as r
+import modules.relay as r
 
 # Set the output for the relay module.
 pin_relay_out = 7

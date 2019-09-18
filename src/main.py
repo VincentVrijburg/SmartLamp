@@ -1,9 +1,9 @@
 # Import necessary modules.
 import RPi.GPIO as GPIO
 from datetime import datetime, timedelta
-import relay as r
-import motion_sensor as ms
-import light_sensor as ls
+import modules.relay as r
+import modules.motion_sensor as ms
+import modules.light_sensor as ls
 
 # Set the different inputs/outputs for the Raspberry Pi modules and sensors.
 pin_motion_sensor_in = 11
@@ -39,28 +39,3 @@ while 1:
                 relay.turn_off()
         else:
             relay.turn_off()
-
-# try:
-#     while 1:
-#         if ((relay.lastTimeTurnedOn is not None) and ((relay.lastTimeTurnedOn + timedelta(seconds=5) > datetime.now()))):
-#             relay.turn_on()
-#         else:
-#             if (motionSensor.motionDetected):
-#                 needsLight = lightSensor.is_dark_environment()
-#                 if (needsLight == True):
-#                     relay.lastTimeTurnedOn = datetime.now()
-#                     relay.turn_on()
-#                 else:
-#                     relay.turn_off()
-#             else:
-#                 relay.turn_off()
-# except KeyboardInterrupt:
-#     print("Keyboard interrupt")
-# except:
-#     print("some error") 
-# finally:
-#     print("clean up") 
-#     # Dispose the dependencies
-#     motionSensor.dispose()
-#     lightSensor.dispose()
-#     relay.dispose()
