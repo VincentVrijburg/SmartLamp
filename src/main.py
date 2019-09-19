@@ -1,9 +1,9 @@
 # Import necessary modules.
 import RPi.GPIO as GPIO
 from datetime import datetime, timedelta
-import modules.relay as r
-import modules.motion_sensor as ms
-import modules.light_sensor as ls
+import relay as r
+import motion_sensor as ms
+import light_sensor as ls
 
 # Set the different inputs/outputs for the Raspberry Pi modules and sensors.
 pin_motion_sensor_in = 11
