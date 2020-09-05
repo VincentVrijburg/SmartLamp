@@ -3,4 +3,5 @@ Python (school) project to make an ordinary item a "smart" item, using a Raspber
 
 ***School:** Windesheim (University of Applied Sciences), Zwolle  
 **Program:** HBO-ICT  
-**Due date:** Week 2, Semester 1 (year 1/4)*
+**Due date:** Week 2, Semester 1 (year 1/4)  
+**Team size:** 6*
